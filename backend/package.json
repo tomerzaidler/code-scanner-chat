@@ -1,0 +1,24 @@
+{
+  "name": "code-scanner-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nodelib/fs.walk": "2.0.0",
+    "compute-cosine-similarity": "1.1.0",
+    "dataframe-js": "1.4.4",
+    "nanoid": "3.3.4",
+    "openai": "4.19.0",
+    "simple-git": "3.21.0"
+  },
+  "devDependencies": {
+    "@types/dataframe-js": "1.4.3",
+    "@types/node": "20.9.2",
+    "typescript": "5.2.2"
+  }
+}
