@@ -11,9 +11,12 @@ export class GitProvider {
         this.client = simpleGit(options);
     }
 
-    public async clone(repoPath: string): Promise<string> {
+    public async clone(repoPath: string, id?: string): Promise<string> {
         const name = this.extractRepoName(repoPath);
-        const outputPath = `${this.baseDir}/${name}-${nanoid(8)}`;
+        if (!id) {
+            id = nanoid();
+        }
+        const outputPath = `${this.baseDir}/${name}-${id}`;
         await this.client.clone(repoPath, outputPath);
         return outputPath;
     }

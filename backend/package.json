@@ -10,15 +10,19 @@
   "license": "ISC",
   "dependencies": {
     "@nodelib/fs.walk": "2.0.0",
+    "@supabase/supabase-js": "^2.38.5",
     "compute-cosine-similarity": "1.1.0",
     "dataframe-js": "1.4.4",
+    "langchain": "^0.0.195",
     "nanoid": "3.3.4",
     "openai": "4.19.0",
+    "pg": "^8.11.3",
     "simple-git": "3.21.0"
   },
   "devDependencies": {
     "@types/dataframe-js": "1.4.3",
     "@types/node": "20.9.2",
+    "@types/pg": "^8.10.9",
     "typescript": "5.2.2"
   }
 }

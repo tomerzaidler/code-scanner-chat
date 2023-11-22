@@ -1,7 +1,7 @@
 import DataFrame, { Row } from "dataframe-js";
 import { FileScanner } from "./file-scanner";
-import { GitProvider } from "./git-provider";
-import { OpenAIProvider } from "./openai-provider";
+import { GitProvider } from "../providers/git.provider";
+import { OpenAIProvider } from "../providers/openai-provider";
 import similarity from "compute-cosine-similarity";
 
 export class CodeScan {
